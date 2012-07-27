@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FuzzyDateAndriodSample</string>
+    <string name="activity_title_test">Test</string>
+    <string name="activity_test_prompt">Enter a date and time and convert it to fuzzy time</string>
+    <string name="activity_test_results">Results:\n</string>
+    <string name="activity_test_result_distance">Fuzzy distance: %s \n</string>
+    <string name="activity_test_result_duration">Fuzzy duration: %s \n</string>
+</resources>

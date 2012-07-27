@@ -1,0 +1,21 @@
+AndroidFuzzyDate
+
+Create more relax human reabable dates and times just like twitter, stackoverflow.  
+
+
+Based on the jFuzzyDate, but converted for Android resources and added implemened some missing methods fromt he JfuzzyDate Alpha. jFuzzyDate was released under the GNU Lesser Public License (LGPL).
+
+
+Distance	
+-84d >fuzzy> 3 months ago
+00:05:20 >fuzzy> in 5 minutes
+01:02:03 >fuzzy> in an hour
+
+Duration
+16d 02:30:40 >fuzzy> two weeks
+55s	>fuzzy> a minute
+
+General format
+20:05 >fuzzy> eight o'clock
+20:30 >fuzzy> half past eight
+20:45 >fuzzy> quarter to nine

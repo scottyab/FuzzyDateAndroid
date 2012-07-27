@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_test_prompt" />
+
+    <LinearLayout
+        android:id="@+id/pick_date_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/input_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="date" 
+            android:hint="enter date (dd/mm/yyyy)"
+            >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/pick_date_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Date"
+            android:onClick="showDatePickerDialog" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pick_time_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/input_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="time"
+            android:hint="enter duration (hh:mm)"
+             />
+
+        <Button
+            android:id="@+id/pick_time_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick Time"
+            android:onClick="showTimePickerDialog" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/make_fuzzy_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Make Fuzzy"
+         android:onClick="makeFuzzy" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_test_results" />
+
+            <TextView
+                android:id="@+id/fuzzy_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
